@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="container">
+        <h1>Quiz Application by Thomas Joseph Y. Almorin | BSIS - 3A</h1>
+        <button id="start-btn">Start Quiz</button>
+        <button id="about-btn">About App</button>
+    </div>
+
+    <!-- About Page -->
+    <div id="about-page" class="container">
+        <h2>About This Application</h2>
+        <p>
+            This quiz application was designed to test knowledge about Web Development topics, specifically HTML, CSS, and JavaScript.
+            It includes dynamic question loading, score tracking, and responsive design. Developed by Thomas Joseph Y. Almorin, BSIS-3A.
+        </p>
+        <button id="back-btn">Back to Menu</button>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quiz-page" class="container">
+        <h2 id="question-number"></h2>
+        <h2 id="question-text"></h2>
+        <ul id="options-container"></ul>
+        <div id="feedback"></div>
+        <button id="pause-btn">| |</button>
+    </div>
+
+    <!-- Pause Options -->
+    <div id="pause-options" class="container" style="display: none;">
+        <h3>Quiz Paused</h3>
+        <button id="resume-btn">Resume Quiz</button>
+        <button id="restart-quiz-btn">Restart Quiz</button>
+        <button id="main-menu-btn">Back to Main Menu</button>
+    </div>
+
+    <!-- Result Page -->
+    <div id="result-page" class="container">
+        <h2>Your Score:</h2>
+        <p id="score-display"></p>
+        <button id="restart-btn">Restart Quiz</button>
+        <button id="main-menu-btn-result">Back to Main Menu</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

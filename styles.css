@@ -1,0 +1,128 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for all pages */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    position: relative; /* Ensure positioning of child elements */
+}
+
+/* Header and titles */
+h1 {
+    font-size: 32px; /* Larger font size for the landing page title */
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+h2, h3 {
+    margin: 10px 0;
+    color: #007BFF;
+}
+
+/* Buttons */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Landing Page */
+#landing-page {
+    display: block;
+}
+
+/* About Page */
+#about-page {
+    display: none;
+}
+
+/* Quiz Page */
+#quiz-page {
+    display: none;
+    position: relative;
+}
+
+#options-container {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+    z-index: 10; /* Ensure choices are above the pause button */
+}
+
+#options-container li {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#options-container li:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Pause Options */
+#pause-options {
+    display: none;
+}
+
+/* Result Page */
+#result-page {
+    display: none;
+}
+
+/* Pause button */
+#pause-btn {
+    position: absolute;
+    bottom: 10px; /* Moved further down */
+    left: 10px; /* Left side */
+    background-color: #FF5733; /* Optional color for emphasis */
+    z-index: 5; /* Ensure it is below the choices */
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
